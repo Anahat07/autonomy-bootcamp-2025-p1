@@ -7,6 +7,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 
+
 class DetectBlue:
     """
     Detects blue objects from an image.
@@ -26,7 +27,7 @@ class DetectBlue:
         """
         Private constructor, use create() method.
         """
-        assert class_create_private_key is DetectBlue.__create_key 
+        assert class_create_private_key is DetectBlue.__create_key
 
     def run(self, image: str, output_path: Path, return_mask: bool = False) -> None | np.ndarray:
         """
@@ -92,7 +93,7 @@ class DetectRed:
         """
         Private constructor, use create() method.
         """
-        assert class_create_private_key is DetectRed.__create_key 
+        assert class_create_private_key is DetectRed.__create_key
 
     def run(self, image: str, output_path: Path, return_mask: bool = False) -> None | np.ndarray:
         """
